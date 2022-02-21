@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Cost Calculator</title>
+  </head>
+  
+  <body>
+<!--Calculate the cost of a product-->
+<div>
+<p>
+Please fill out this form in order to calculate the total cost:
+</p>
+<form action="calculate.php" method="post">
+
+<p>Price: <input type="text" name="price" size="10"></p>
+<p>Quantity: <input type="number" name="quantity" size="5" min="1" value="1"></p>
+<p>Discount: <input type="text" name="discount" size="10"></p>
+<p>Tax: <input type="text" name="tax" size="10"> (%)</p>
+
+<p>Shipping method":
+<select name="shipping">
+<option value="5.00">Slow and Steady</option>
+<option value="8.95">Step on it</option>
+<option value="19.36">I need it yesterday!</option>
+</select>
+</p>
+<!--<p>Number of payments to make:
+<input type="number" name="payments" size="10" min="1" value="1">
+</p>
+-->
+<p>Payment option:
+<select name="payments">
+<option value="1">Monthly</option>
+<option value="2">BiWeekly</option>
+</select>
+</p>
+<p>
+<input type="submit" name="submit" value="Calculate">
+</form>
+</div>
+
+</body>
+</html>
